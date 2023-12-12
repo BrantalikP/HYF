@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Currency Converter</title>
+</head>
+
+<body>
+	<h1>Currency Converter</h1>
+
+	<form id="newRateForm">
+		<input type="text" value="EUR" id="baseCurrency" disabled placeholder="Base Currency" />
+		<input type="text" id="targetCurrency" placeholder="Target Currency" />
+		<input type="text" id="rate" placeholder="Rate" />
+		<button type="submit">Add Rate</button>
+	</form>
+
+	<form id="convertForm">
+		<input type="text" value="EUR" id="fromCurrency" disabled placeholder="From Currency" />
+		<input type="text" id="toCurrency" placeholder="To Currency" />
+		<input type="number" id="amount" placeholder="Amount" />
+		<button type="submit">Convert</button>
+		<p id="result"></p>
+	</form>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
